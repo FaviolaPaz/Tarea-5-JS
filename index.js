@@ -8,16 +8,16 @@ const fibonacciA = (numero) => {
         }
         numeros.push(suma);
     }
-    console.log(numeros)
+    console.log("Serie Fibonacci entre los numeros 0 y 1000: ", numeros)
     return numeros
 }
 const resultadoA = fibonacciA(1000)
 
 const fibonacciB = resultadoA.filter(numero => numero % 2 == 0 )
-console.log(fibonacciB)
+console.log("Numeros pares de la serie Fibonacci: ", fibonacciB)
 
 const fibonacciC = resultadoA.filter(numero => numero % 2 )
-console.log(fibonacciC)
+console.log("Numeros impares de la serie Fibonacci: ", fibonacciC)
 
 let pokemones = ["Pikachu", "Charmander", "Bulbasaur", "Squirtle"]
 
@@ -58,4 +58,4 @@ let pokemones2 =  [
    ]
 
    const pokemonesFuego = pokemones2.filter(pokemon => pokemon.tipo === 'Fuego')
-   console.log(pokemonesFuego) 
+   console.log("Pokemones de Fuego: ", pokemonesFuego) 
